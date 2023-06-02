@@ -1,0 +1,32 @@
+// Experiment B5
+
+// Write a program using Arduino to control LED (One or 38more ON/OFF). Or Blinking
+
+void setup() {
+    // put your setup code here,
+    pinmode (0, OUTPUT) ;
+    pinmode (1, OUTPUT) ;
+    pinmode (2, OUTPUT) ;
+    pinmode (4, OUTPUT) ;
+}
+void loop() {
+    // put your main code here,
+    
+    digitalWrite(0, HIGH);
+    delay(100);
+    digitalWrite(1, HIGH);
+    delay(100);
+    digitalWrite(2, HIGH) ;
+    delay(100);
+    digitalWrite(4, HIGH);
+    delay(100);
+
+    digitalWrite(0, LOW)
+    delay(100);
+    digitalWrite(1, LOW)
+    delay(100);
+    digitalWrite(2, LOW)
+    delay(1ØO);
+    digitalWrite(4, LOW)
+    delay(100);
+}

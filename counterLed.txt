@@ -1,0 +1,46 @@
+// Experiment B6
+
+// Create a program that illuminates the green LED if the counter is less than 100, illuminates th44e yellow LED if the counter is between 101 and 200 and illuminates the red LED if the counter is greater than 200
+
+
+const int green=0;
+const int yellow=2;
+const int red=1;
+
+void setup() 
+{
+  pinMode(green,OUTPUT);
+  pinMode(yellow,OUTPUT);
+  pinMode(red,OUTPUT);
+}
+
+unsigned char counter=0;
+
+void loop()
+{
+  counter=counter + 1;
+  delay(50);
+  
+  if(counter<100)
+  {
+    digitalWrite(green,LOW);
+    digitalWrite(red,HIGH);
+    digitalWrite(yellow,HIGH);
+  }
+
+  else if(counter>100 && counter<200)
+  {
+    digitalWrite(green,HIGH);
+    digitalWrite(red,HIGH);
+    digitalWrite(yellow,LOW);
+  }
+
+  else if(counter>200 && counter<300)
+  {
+    digitalWrite(green,HIGH);
+    digitalWrite(red,LOW);
+    digitalWrite(yellow,HIGH);
+  }
+  
+  
+}

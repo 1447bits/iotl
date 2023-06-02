@@ -1,0 +1,23 @@
+Name : Atharv Vyas
+Roll : SEAD21156
+Class : SE (AIDS)-(A)
+Subject : IOTL (Assignment 8)
+
+-------------------------------------------
+
+void setup() {
+
+	serial.begin(9600);
+	serial.println('Input a number');
+
+}
+
+void loop() {
+
+  	// put your main code here, to run repeatedly:
+	int inp=Serial.ParseInt();
+	inpsq=sq(inp);
+	Serial.println(int(inpsq));
+	delay(5000);
+
+}
