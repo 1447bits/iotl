@@ -1,9 +1,4 @@
-Name : Atharv Vyas
-Roll : SEAD21156
-Class : SE (AIDS)-(A)
-Subject : IOTL (Assignment 8)
-
--------------------------------------------
+// Square of a number
 
 void setup() {
 
