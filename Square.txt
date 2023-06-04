@@ -1,18 +1,23 @@
 // Square of a number
 
 void setup() {
-
-	serial.begin(9600);
-	serial.println('Input a number');
+  // put your setup code here, to run once:
+Serial.begin(9600);
 
 }
 
+int num = 0;
+
 void loop() {
-
-  	// put your main code here, to run repeatedly:
-	int inp=Serial.ParseInt();
-	inpsq=sq(inp);
-	Serial.println(int(inpsq));
-	delay(5000);
-
+  // put your main code here, to run repeatedly:
+  num = Serial.parseInt();
+  if(num != 0){
+    Serial.print("Square Of \"");
+    Serial.print(num);
+    Serial.print("\" is = ");
+    Serial.print(sq(num));
+    Serial.println();
+    num = 0;
+    return;
+  }
 }
